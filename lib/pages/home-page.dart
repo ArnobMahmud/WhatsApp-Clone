@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_clone/pages/chat-page.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key}) : super(key: key);
@@ -60,6 +61,7 @@ class _HomePageState extends State<HomePage>
           )
         ],
         bottom: TabBar(
+          indicatorColor: Colors.white,
           controller: _controller,
           tabs: [
             Tab(
@@ -81,7 +83,7 @@ class _HomePageState extends State<HomePage>
         controller: _controller,
         children: [
           Text("camera"),
-          Text("chat"),
+          ChatPage(),
           Text("status"),
           Text("calls"),
         ],

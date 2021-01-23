@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Color(0xFF075E54),
         accentColor: Color(0xFF128C7E),
+        fontFamily: "OpenSans",
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: HomePage(),
